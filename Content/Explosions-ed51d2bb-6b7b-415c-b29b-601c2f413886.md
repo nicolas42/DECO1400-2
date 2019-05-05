@@ -1,0 +1,49 @@
+# Explosions
+
+This is why people say rocket science (engineering) is hard.  Because the only way people have parked in orbit around the Earth is to sit on top of explosions.
+
+- Gases
+
+    equal and opposite - sitting on a chair, push off, fire extinguisher (don't do it)
+
+    angular momentum - skater spinning around, why it's easier to balance on a bike who's wheels are spinning (you can also turn slightly in the direction that you fall in)
+
+    entropy - energy spreads out
+
+    Now because the explosion takes a while the explosives (which are liquid explosives) take a while to run out. They are exploding out of the back of your rocket so you slowly run out of fuel.   Now the explosion doesn’t get any less powerful but you get lighter so you start to speed up faster 
+
+The main problem with our balloon turns out to be the main problem with our rocket. It runs out of gas. If you run out of gas then you might get stuck in empty space. 
+
+- Rocket Equation
+
+    change-in-speed = exhause-velocity * ln ( final-weight / starting-weight)
+
+There’s nothing to push off!
+
+If you sit on a chair then you can move by pushing on something else like another person on a chair. Or you could get a fire extinguisher and use it to move. You’ll move in the opposite direction to the thing you were trying to move. It turns out that invisible atoms works like this as well. When the atoms shoot out of the back or the rocket they are coming from a collision that came from a collision that came from a collision that hit the back of your rocket and imparted the same push to you as it got from the explosion. 
+
+The balloon works the same way. It goes forwards because the air goes backwards and the little pieces of air all hit each other and the last one hit on the inside of the balloon.  It turns out that the last collision was between the balloon and the last atom. So it’s the thing that actually moves forward. It actually moves forward and hits more air molecules and it will speed them up as it hits them.  <Feynman talks about atoms pumps and heating>
+
+When atoms are hot they go faster
+
+You can hit a hammer on some metal to test this. If they get hot very quickly they’ll go faster and try to fly off in all directions.  If we put a hole in the bottom it’ll fly out backwards and push us forwards. 
+
+In fact the rocket is a bit like a very very powerful spray can.  It's made of metal and once you press a button a lot of junk will spray out of it. 
+
+It's quite hard to imagine how this actually works because rockets are so much larger and more powerful than things we're used to.  But in addition to the exhaust being essentially a continuous explosion, the weight of the stuff shooting out of the back of the rocket is quite high also.  Here is an example of fuel usage as measured in elephants.
+
+[https://www.youtube.com/watch?v=X4iMeKif488](https://www.youtube.com/watch?v=X4iMeKif488)
+
+- Rocket Fuels
+
+    The best fuels are the lightest because they go the fastest when you hit them with a hammer.
+
+    <kinetic formula - hydrogen vs keroscene vs methane
+
+    reasons why methane is good
+
+    hydrogen takes big tanks which are heavy.
+
+    [http://www.aerospacengineering.net/?p=656](http://www.aerospacengineering.net/?p=656)
+
+    kerosene or rocket propellant 1 (RP-1) is pretty good but it can't be made easily on another planet.  Methane or natural gas as it's sometimes branded can be made with simple (yet quite slow) chemical reactions from water and carbon dioxide in the air (the thing that might warm up the Earth).
