@@ -11,8 +11,13 @@ import (
 )
 
 func main() {
-
+	os.Chdir("content")
 	dir, _ := os.Getwd()
+	render_html(dir)
+}
+
+func render_html(dir string) {
+
 	files, _ := ioutil.ReadDir(dir)
 	for _, file := range files {
 		ext := path.Ext(file.Name())
