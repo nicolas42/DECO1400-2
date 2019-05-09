@@ -24,23 +24,10 @@ func main() {
 
 			md := markdown.New(markdown.XHTMLOutput(true))
 			bytes, _ := ioutil.ReadFile(infile)
-			html := md.RenderToString(bytes)
-			html = header + html
-			html = html + footer
-			ioutil.WriteFile(outfile, []byte(html), 0644)
+			ioutil.WriteFile(outfile, []byte(md.RenderToString(bytes)), 0644)
 
 		}
 	}
 }
 
-var header = `<!doctype html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-`
-
-var footer = `</body>
-</html>
-`
+//	fmt.Println(md.RenderToString([]byte("Header\n===\nText")))
