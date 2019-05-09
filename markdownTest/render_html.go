@@ -19,16 +19,22 @@ func main() {
 		if ext == ".md" {
 			fmt.Println(file.Name())
 
+			// Prepare Files
 			infile := file.Name()
 			ext := path.Ext(infile)
 			outfile := infile[0:len(infile)-len(ext)] + ".html"
 
+			// Generate HTML
 			md := markdown.New(markdown.XHTMLOutput(true))
 			bytes, _ := ioutil.ReadFile(infile)
 			html := md.RenderToString(bytes)
+
+			// Fenaigle
 			html = strings.ReplaceAll(html, ".md", ".html")
 			html = header + html
 			html = html + footer
+
+			// Output File
 			ioutil.WriteFile(outfile, []byte(html), 0644)
 
 		}
