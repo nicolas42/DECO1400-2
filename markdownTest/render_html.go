@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path"
+	"strings"
 
 	"gitlab.com/golang-commonmark/markdown"
 )
@@ -25,6 +26,7 @@ func main() {
 			md := markdown.New(markdown.XHTMLOutput(true))
 			bytes, _ := ioutil.ReadFile(infile)
 			html := md.RenderToString(bytes)
+			html = strings.ReplaceAll(html, ".md", ".html")
 			html = header + html
 			html = html + footer
 			ioutil.WriteFile(outfile, []byte(html), 0644)

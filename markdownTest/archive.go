@@ -1,4 +1,4 @@
-package main
+package archive
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"path"
 )
 
-func main() {
+func printAllMDFiles() {
 	dir, _ := os.Getwd()
 	files, _ := ioutil.ReadDir(dir)
 	for _, file := range files {
