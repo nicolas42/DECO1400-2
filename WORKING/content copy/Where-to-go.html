@@ -15,6 +15,12 @@
 		
 		
 		<style>
+
+/* Necessary for Full Width layouts */
+body {
+	max-width: none;
+}
+			
 				* {
 				  box-sizing: border-box;
 				}
@@ -31,25 +37,12 @@
 				  width: 100%;
 				  padding: 20px;
 				}
-				
-				#myBtn {
-				  width: 200px;
-				  font-size: 18px;
-				  padding: 10px;
-				  border: none;
-				  background: #000;
-				  color: #fff;
-				  cursor: pointer;
-				}
-				
-				#myBtn:hover {
-				  background: #ddd;
-				  color: black;
-				}
+
 		</style>			
 	</head>
 	<body>
 
+<div class="inner">
 		<h1 class="title">
 			<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
 			Balloon Technology
@@ -67,21 +60,22 @@
 			<div><a href="Space.html">Space</a></div>
 			<div><a href="javascript:toggleMargins()">Toggle Margins</a></div>
 		</nav>
+	</div>
 
+	<!--Video-->
+<video autoplay muted loop id="myVideo" onclick="playPause('#myVideo');">
+<source src="ISS_trimmed.mp4" type="video/mp4">
+Your browser does not support HTML5 video.
+</video>
 
-<div>
-	<video autoplay muted loop id="myVideo" onclick="playPause('#myVideo');">
-		<source src="ISS_trimmed.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
-	  </video>
-	  <button id="myBtn" onclick="playPause('#myVideo')">Pause</button>	  
-</div>
-
-<p>
+<!-- Equation -->
+<div class="inner">
+		<button class="button" onclick="playPause('#myVideo')">Pause</button>	  
+		<p>
   When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
   $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 </p>
-
+</div>
 
 <div style="background-color: #000;min-height: 60vh;background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://live.staticflickr.com/7312/9089062389_70a9b2ad87_k_d.jpg');">
     <div class="inner" style="width: 800px; margin: 0 auto;">
@@ -95,7 +89,8 @@ image with <code>mozjpeg</code> and maybe scale it down a bit.
     </p></div>
 </div>
 
-
+<!-- Plot -->
+<div class="inner"><h1>The Tyranny of the Rocket Equation</h1></div>
 <div id="Plot">
 </div>
 <script>
@@ -110,14 +105,15 @@ for(var i=0;i<100; i=i+1){
 	line.x.push(i);
     line.y.push(Math.log(i));
 }
-
 var data = [line];
 Plotly.newPlot('Plot', data);
 </script>
 
 
 
-		<p>It’s so hard to get to another planet that the only reasonable options to go to first are the closest ones; the Moon, Venus, and Mars.</p>
+<div class="inner">
+
+<p>It’s so hard to get to another planet that the only reasonable options to go to first are the closest ones; the Moon, Venus, and Mars.</p>
 <h1>Our Moon</h1>
 <p>The moon is quite close and has wonderful views.</p>
 <p><img src="Untitled-f00c6e5e-0412-49aa-b0f2-45f7155905f7.png" alt="" /></p>
@@ -135,6 +131,7 @@ Plotly.newPlot('Plot', data);
 <p>Mars kind of wins by default.  Its nearby.  The days are about 24 hours.  The gravity is 37%.  It has all the elements that are needed for life.  It’s pretty cold - colder than the South Pole, but the max temperature is about 30 degrees C, which is doable.  The atmosphere is very thin but better than no atmosphere at all.</p>
 <p>Living on Mars would be a little bit like living in Antarctica with low gravity and space suits.</p>
 <p>Since there’s liquid water and the other necessary elements there might be living things on Mars.</p>
+</div>
 
 <nav class="container">
 		<div class="chevron left"></div>

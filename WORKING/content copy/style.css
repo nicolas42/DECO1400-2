@@ -9,6 +9,12 @@ body {
   margin: 0 auto; 
 }
 
+/* https://www.youtube.com/watch?v=KYT_Ch3dTB8 */
+div.inner {
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 0.01rem;
@@ -29,7 +35,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -68,8 +74,20 @@ h1.title {
 }
 
 
+/* Button */
+.button {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  color: black;
+  cursor: pointer;
+}
 
-
+.button:hover {
+  background: #aaa;
+}
 
 
 /* Chevrons
