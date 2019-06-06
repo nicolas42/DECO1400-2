@@ -132,3 +132,13 @@ https://codepen.io/jonneal/pen/kptBs
 	left: 0.25em;
 	transform: rotate(-135deg);
 }
+
+.nav-footer {
+  padding-top: 2em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-footer > a {
+  padding: 1em;
+}
