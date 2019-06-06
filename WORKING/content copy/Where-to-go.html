@@ -11,6 +11,7 @@
 		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 		
 
+		<link rel="stylesheet" type="text/css" href="co-op.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		
 		
@@ -20,15 +21,12 @@
 body {
 	max-width: none;
 }
-			
+							
+/*
 				* {
 				  box-sizing: border-box;
 				}
-				
-				#myVideo {
-					width: 100%;
-				}
-				
+
 				.content {
 				  position: fixed;
 				  bottom: 0;
@@ -37,11 +35,12 @@ body {
 				  width: 100%;
 				  padding: 20px;
 				}
-
+*/
 		</style>			
 	</head>
 	<body>
 
+		<!-- Nav Bar -->
 <div class="inner">
 		<h1 class="title">
 			<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
@@ -58,15 +57,15 @@ body {
 			<div><a href="On-Dreams.html">On Dreams</a></div>
 			<div><a href="Orbit.html">Orbit</a></div>
 			<div><a href="Space.html">Space</a></div>
-			<div><a href="javascript:toggleMargins()">Toggle Margins</a></div>
 		</nav>
 	</div>
 
 	<!--Video-->
-<video autoplay muted loop id="myVideo" onclick="playPause('#myVideo');">
+<video autoplay muted loop id="myVideo" class="video" onclick="playPause('#myVideo');">
 <source src="ISS_trimmed.mp4" type="video/mp4">
 Your browser does not support HTML5 video.
 </video>
+<div><a href="javascript:toggleMargins()">Toggle Margins</a></div>
 
 <!-- Equation -->
 <div class="inner">
@@ -77,6 +76,22 @@ Your browser does not support HTML5 video.
 </p>
 </div>
 
+<!-- Filler Text -->
+<div class="inner">
+	<p>Temperature of the Moon at the South Pole</p>
+	<p>Hopefully there’s some water in craters so we can do our laundry and take luxurious showers.</p>
+	<p>Another problem is that there’s no carbon or nitrogen which you need to make people (<a href="https://en.wikipedia.org/wiki/Geology_of_the_Moon#Elemental_composition">wiki</a>).</p>
+	<h1>Venus</h1>
+	<p>Venus is one of the two planets closest to the Earth but it’s 400 Degrees which is a bit of a show stopper.  Venus also boasts an atmosphere which is about 100 times thicker than Earth’s. (<a href="https://en.wikipedia.org/wiki/Venus">wiki</a>).</p>
+	<h2>Blimp-life:</h2>
+	<p>You might be able live above Venus in a blimp.  50km above the surface the weather is quite nice and a blimp full of Earth’s atmosphere would float.  So you could hang out there … in a blimp (<a href="https://en.wikipedia.org/wiki/High_Altitude_Venus_Operational_Concept">wiki</a>).</p>
+	<h1>Mars</h1>
+	<p>Mars kind of wins by default.  Its nearby.  The days are about 24 hours.  The gravity is 37%.  It has all the elements that are needed for life.  It’s pretty cold - colder than the South Pole, but the max temperature is about 30 degrees C, which is doable.  The atmosphere is very thin but better than no atmosphere at all.</p>
+	<p>Living on Mars would be a little bit like living in Antarctica with low gravity and space suits.</p>
+	<p>Since there’s liquid water and the other necessary elements there might be living things on Mars.</p>
+	</div>
+	
+<!-- Full Width Quote -->
 <div style="background-color: #000;min-height: 60vh;background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://live.staticflickr.com/7312/9089062389_70a9b2ad87_k_d.jpg');">
     <div class="inner" style="width: 800px; margin: 0 auto;">
     <h2>The Hero Shortcode</h2>
@@ -115,12 +130,18 @@ Plotly.newPlot('Plot', data);
 
 <p>It’s so hard to get to another planet that the only reasonable options to go to first are the closest ones; the Moon, Venus, and Mars.</p>
 <h1>Our Moon</h1>
-<p>The moon is quite close and has wonderful views.</p>
+<p>The moon is quite close and has wonderful views. Here's the distance to scale (<a href="https://www.notion.so/48eab292781d4ab79f2fc33db70ee185#1c23b6479f6641c2bb8370f496f4c81d">wiki</a>)</p>
+</div>
 <p><img src="Untitled-f00c6e5e-0412-49aa-b0f2-45f7155905f7.png" alt="" /></p>
-<p>Distance to scale (<a href="https://www.notion.so/48eab292781d4ab79f2fc33db70ee185#1c23b6479f6641c2bb8370f496f4c81d">wiki</a>)</p>
+<div class="inner">
+
 <p>There’s no air, it’s very dusty, and has about 15% gravity.  The days are 13 days long and the nights are also 13 days long (one moonth).  Because the days are so long the surface can get a bit toasty - about 120 degrees Celcius so you might want to live at the North or South Pole if you don’t want your shoes to melt.</p>
+</div>
+
 <p><img src="Untitled-cb49b282-21d4-4e0b-9dc6-b7f682286b66.png" alt="" /></p>
-<p>Temperature of the Moon at the South Pole</p>
+
+<div class="inner">
+	<p>Temperature of the Moon at the South Pole</p>
 <p>Hopefully there’s some water in craters so we can do our laundry and take luxurious showers.</p>
 <p>Another problem is that there’s no carbon or nitrogen which you need to make people (<a href="https://en.wikipedia.org/wiki/Geology_of_the_Moon#Elemental_composition">wiki</a>).</p>
 <h1>Venus</h1>
@@ -150,6 +171,30 @@ Plotly.newPlot('Plot', data);
 	</nav>
 
 
+
+
+
+	<footer><address class="vcard"><span class="adr">
+			<i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+			<a href="geo:34.6103,-83.5421">123 Fake Street, Clarkesville, GA 30523</a>
+		</span>
+		
+			<span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a class="tel" href="tel:+15558675309">+1 (555) 867-5309</a></span>
+			<span><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a class="email" href="mailto:service@example.net">service@example.net</a>
+		</span>
+			<span><i class="fa fa-xmpp" aria-hidden="true"></i>&nbsp;<a class="url" href="xmpp:chat@example.net?join" title="Chat room">chat@example.net</a>
+		</span>
+		</address>
+		
+		<span class="icons">
+			<a href="https://themes.gohugo.io//theme/co-op/index.xml" title="RSS">
+				<i class="fa fa-rss-square" aria-hidden="true"></i>
+			</a>
+		</span>
+		
+		</footer>
+		
+		
 
 </body>
 </html>

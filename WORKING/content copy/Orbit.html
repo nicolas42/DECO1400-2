@@ -1,12 +1,32 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
 		<script type="text/javascript" src="tools.js"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+		<!-- Call Script This Last !!!-->
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+		
+
+		<link rel="stylesheet" type="text/css" href="co-op.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		
+		<style>
+
+/* Necessary for Full Width layouts */
+body {
+	max-width: none;
+}		</style>			
 	</head>
+
 	<body>
 
-		<h1 class="title">
+			<div class="inner">
+				<h1 class="title">
 			<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
 			Orbit
 		</h1>
@@ -22,7 +42,16 @@
 			<div><a href="Orbit.html">Orbit</a></div>
 			<div><a href="Space.html">Space</a></div>
 		</nav>
+</div>
 
+			<!--Video-->
+<video autoplay muted loop id="myVideo" class="video" onclick="playPause('#myVideo');">
+		<source src="ISS_trimmed.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+		</video>
+		<div><a href="javascript:toggleMargins()">Toggle Margins</a></div>
+
+		<div class="inner">
 <p><a href="https://www.nasa.gov/feature/download-nasa-videos-for-cinespace">https://www.nasa.gov/feature/download-nasa-videos-for-cinespace</a></p>
 <p><a href="https://www.youtube.com/watch?v=4993sBLAzGA">NASA Live: Earth From Space - Nasa Live Stream | ISS LIVE FEED : ISS Tracker + Live Chat</a></p>
 <p>Looking at the Earth from space is pretty cool</p>
@@ -40,5 +69,6 @@
 <p>and some people have even floated up very high with balloons (that they don’t use for propulsion but rather for buoyancy - like a boat)</p>
 </li>
 </ul>
+</div>
 </body>
 </html>
