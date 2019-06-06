@@ -15,10 +15,8 @@ function playPause(arg) {
 	var video = document.querySelector(arg);
   if (video.paused) {
 	video.play();
-	btn.innerHTML = "Pause";
   } else {
 	video.pause();
-	btn.innerHTML = "Play";
   }
 }
 

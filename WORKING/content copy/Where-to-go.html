@@ -3,12 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<script type="text/javascript" async
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
-	  </script>
-			
-		<link rel="stylesheet" type="text/css" href="style.css">
+
 		<script type="text/javascript" src="tools.js"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+		<!-- Call Script This Last !!!-->
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+		
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		
 		<style>
 				* {
 				  box-sizing: border-box;
@@ -78,6 +83,40 @@
 </p>
 
 
+<div style="background-color: #000;min-height: 60vh;background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://live.staticflickr.com/7312/9089062389_70a9b2ad87_k_d.jpg');">
+    <div class="inner" style="width: 800px; margin: 0 auto;">
+    <h2>The Hero Shortcode</h2>
+
+<p>This theme lets you customize the layout with short codes.
+This shortcode is called <code>hero</code>.
+It can include a caption, height, background color and cover image.
+If you were doing this on your own site, you’d probably want to compress the
+image with <code>mozjpeg</code> and maybe scale it down a bit.
+    </p></div>
+</div>
+
+
+<div id="Plot">
+</div>
+<script>
+
+var line = {
+  x: [],
+  y: [],
+  type: 'scatter'
+};
+
+for(var i=0;i<100; i=i+1){
+	line.x.push(i);
+    line.y.push(Math.log(i));
+}
+
+var data = [line];
+Plotly.newPlot('Plot', data);
+</script>
+
+
+
 		<p>It’s so hard to get to another planet that the only reasonable options to go to first are the closest ones; the Moon, Venus, and Mars.</p>
 <h1>Our Moon</h1>
 <p>The moon is quite close and has wonderful views.</p>
@@ -113,6 +152,8 @@
 		<div>Space</div>
 	</nav>
 
+
+
 </body>
 </html>
 
@@ -124,7 +165,7 @@
 							<div class="chevron right"></div>
 						</nav>
 
--->
+
 
 
 
@@ -145,3 +186,6 @@
 	</nav>
 	
 	</header>	
+
+
+	-->
