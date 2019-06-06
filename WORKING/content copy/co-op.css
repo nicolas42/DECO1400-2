@@ -1,14 +1,3 @@
-:root {
-    --color-accent: #81a1c1;
-    --color-accent-secondary: #a3be8c;
-    --color-accent-subtle: #575757;
-    --color-dark-bg: #232432;
-    --color-light-bg: #fcfcfc;
-    --max-content-width: 900px;
-    --padding-mobile: 1rem;
-    --padding-page: 3rem
-}
-
 footer {
     background-color: #222;
     color: #eee;
@@ -19,5 +8,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    text-decoration: none;
 
 }

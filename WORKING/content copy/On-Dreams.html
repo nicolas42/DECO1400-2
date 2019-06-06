@@ -1,11 +1,44 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script type="text/javascript" src="tools.js"></script>
-	</head>
-	<body>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
 
+		<script type="text/javascript" src="tools.js"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+		<!-- Call Script This Last !!!-->
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+		
+
+		<link rel="stylesheet" type="text/css" href="co-op.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style>
+				blockquote {
+					background: #f9f9f9;
+					border-left: 10px solid #ccc;
+					margin: 1.5em 10px;
+					padding: 0.5em 10px;
+					quotes: "\201C""\201D""\2018""\2019";
+				  }
+				  blockquote:before {
+					color: #ccc;
+					content: open-quote;
+					font-size: 4em;
+					line-height: 0.1em;
+					margin-right: 0.25em;
+					vertical-align: -0.4em;
+				  }
+				  blockquote p {
+					display: inline;
+				  }
+				</style>
+			
+	</head>
+
+	<body>
+<div class="inner">
 		<h1 class="title">
 			<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
 			On Dreams
@@ -22,9 +55,79 @@
 			<div><a href="Orbit.html">Orbit</a></div>
 			<div><a href="Space.html">Space</a></div>
 		</nav>
+	</div>
+	<!--Video-->
+	<video autoplay muted loop id="myVideo" class="video" onclick="playPause('#myVideo');">
+			<source src="ISS_trimmed.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+			</video>
+			<div class="inner">			
+			<!-- Equation -->
+			<div class="inner">
+					<button class="button" onclick="toggleMargins();">Toggle Full Screen</button>	  
+					<button class="button" onclick="playPause('#myVideo')">Play/Pause</button>	  
+					<div><a href="javascript:toggleMargins()">Toggle Margins</a></div>
+					<p>
+			  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+			  $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+			</p>
+			</div>
+			
+			<!-- Filler Text -->
+			<div class="inner">
+				<p>Temperature of the Moon at the South Pole</p>
+				<p>Hopefully there’s some water in craters so we can do our laundry and take luxurious showers.</p>
+				<p>Another problem is that there’s no carbon or nitrogen which you need to make people (<a href="https://en.wikipedia.org/wiki/Geology_of_the_Moon#Elemental_composition">wiki</a>).</p>
+				<h1>Venus</h1>
+				<p>Venus is one of the two planets closest to the Earth but it’s 400 Degrees which is a bit of a show stopper.  Venus also boasts an atmosphere which is about 100 times thicker than Earth’s. (<a href="https://en.wikipedia.org/wiki/Venus">wiki</a>).</p>
+				<h2>Blimp-life:</h2>
+				<p>You might be able live above Venus in a blimp.  50km above the surface the weather is quite nice and a blimp full of Earth’s atmosphere would float.  So you could hang out there … in a blimp (<a href="https://en.wikipedia.org/wiki/High_Altitude_Venus_Operational_Concept">wiki</a>).</p>
+				<h1>Mars</h1>
+				<p>Mars kind of wins by default.  Its nearby.  The days are about 24 hours.  The gravity is 37%.  It has all the elements that are needed for life.  It’s pretty cold - colder than the South Pole, but the max temperature is about 30 degrees C, which is doable.  The atmosphere is very thin but better than no atmosphere at all.</p>
+				<p>Living on Mars would be a little bit like living in Antarctica with low gravity and space suits.</p>
+				<p>Since there’s liquid water and the other necessary elements there might be living things on Mars.</p>
+				</div>
+				
+			<!-- Full Width Quote -->
+			<div style="background-color: #000;min-height: 60vh;background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://live.staticflickr.com/7312/9089062389_70a9b2ad87_k_d.jpg');">
+				<div class="inner" style="width: 800px; margin: 0 auto;">
+				<h2>The Hero Shortcode</h2>
+			
+			<p>This theme lets you customize the layout with short codes.
+			This shortcode is called <code>hero</code>.
+			It can include a caption, height, background color and cover image.
+			If you were doing this on your own site, you’d probably want to compress the
+			image with <code>mozjpeg</code> and maybe scale it down a bit.
+				</p></div>
+			</div>
+			
+			<!-- Plot -->
+			<div class="inner"><h1>The Tyranny of the Rocket Equation</h1></div>
+			<div id="Plot">
+			</div>
+			<script>
+			
+			var line = {
+			  x: [],
+			  y: [],
+			  type: 'scatter'
+			};
+			
+			for(var i=0;i<100; i=i+1){
+				line.x.push(i);
+				line.y.push(Math.log(i));
+			}
+			var data = [line];
+			Plotly.newPlot('Plot', data);
+			</script>
+			
+			
+					
+<blockquote>
+		And I grew up in the 70s, when the careers advisor used to come to school, and he used to get the kids together and say, "Look, I advise you to get a career, what can I say? That's it." And he took me aside, he said, "Whatcha you want to do, kid? Whatcha you want to do? Tell me, tell me your dreams!" "I want to be a space astronaut! Go to outer space, discover things that have never been discovered." He said, "Look, you're British, so scale it down a bit, all right?" "All right, I want to work in a shoe shop then! Discover shoes that no one's ever discovered right in the back of the shop, on the left." And he said, "Look, you're British, so scale it down a bit, all right?" "All right, I want to work in a sewer then! Discover sewage that no one's ever discovered, and pile it on my head, then come to the surface and sell myself to an art gallery." He said, "What the fuck have you been smoking, eh? Certainly you haven't been smoking in a bar in California, that's for certain!""
+	</blockquote>
 
-<p>And I grew up in the – in the 70s, when there was, uh – it was – it was a period of, you know, the – the careers advisor used to come to school and – and h – he used to s – get the kids together and say, “Look, I – I advise you to get a career, what can I say? That’s it.” And he took me aside – he said, “Whatcha you want to do, kid? Whatcha you want to do? Tell me, tell me your dreams!” “I want to a space astronaut, go to outer space, discover things that have never been discovered.” He said, “Look, you’re British, so scale it down a bit, all right?” “All right, I want to work in a shoe shop then! Discover shoes that no one’s ever discovered right in the back of the shop on the left.” And he said, “Look, you’re British, so scale it down a bit, all right?” “All right, I want to work in a sewer then. And discover sewage that no one’s ever discovered. And pile it on my head and the come to the surface and sell myself to an art gallery.” He said, “What the fuck have you been smoking, eh? Certainly haven’t been smoking in a bar in California, that’s for certain.” - Eddie Izzard</p>
 <p>Why go to space - get to meet aliens. walk around in a space suit.  visit other planets.  fight mean aliens.  have laser guns.  explore strange new places.</p>
 <p>Why do anything?</p>
-</body>
+</div></body>
 </html>

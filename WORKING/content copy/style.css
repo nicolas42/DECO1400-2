@@ -1,11 +1,15 @@
 /*
+
 * {
   border: 1px solid grey;
 }
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   line-height: 1.6;
-  max-width: 800px;
   margin: 0 auto; 
 }
 
@@ -54,20 +58,20 @@ img {
     height: 8rem;
   }
 
+
+/* Getting Smaller */
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 10em;
+  }
+}
+
 .container div {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #111;
 
 }
-
-/* Getting Smaller */
-@media only screen and (min-width: 600px) {
-  container {
-    height: 10em;
-  }
-}
-
 
 
 /* Pure CSS side menu file:///Users/nick2/Documents/GitHub/DECO1400/purecss/pure_css_demo.html */

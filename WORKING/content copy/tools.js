@@ -22,7 +22,7 @@ function playPause(arg) {
 
 function toggleMargins() {
 	var style = document.body.style;
-  if (style.maxWidth === 'none') {
+  if (style.maxWidth !== '800px') {
 	style.maxWidth = '800px';
   } else {
 	style.maxWidth = 'none';
