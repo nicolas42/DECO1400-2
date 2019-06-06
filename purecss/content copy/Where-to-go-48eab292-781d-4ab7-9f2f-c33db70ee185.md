@@ -1,4 +1,3 @@
-
 # Where to go?
 
 It's so hard to get to another planet that the only reasonable options to go to first are the closest ones; the Moon, Venus, and Mars.  

@@ -1,0 +1,10 @@
+.container div {
+    font-size: 3rem;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+}
+
+.container {
+    display: flex;
+}

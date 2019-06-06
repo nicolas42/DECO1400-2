@@ -1,0 +1,7 @@
+# On Dreams
+
+And I grew up in the – in the 70s, when there was, uh – it was – it was a period of, you know, the – the careers advisor used to come to school and – and h – he used to s – get the kids together and say, “Look, I – I advise you to get a career, what can I say? That’s it.” And he took me aside – he said, “Whatcha you want to do, kid? Whatcha you want to do? Tell me, tell me your dreams!” “I want to a space astronaut, go to outer space, discover things that have never been discovered.” He said, “Look, you’re British, so scale it down a bit, all right?” “All right, I want to work in a shoe shop then! Discover shoes that no one’s ever discovered right in the back of the shop on the left.” And he said, “Look, you’re British, so scale it down a bit, all right?” “All right, I want to work in a sewer then. And discover sewage that no one’s ever discovered. And pile it on my head and the come to the surface and sell myself to an art gallery.” He said, “What the fuck have you been smoking, eh? Certainly haven’t been smoking in a bar in California, that’s for certain.” - Eddie Izzard
+
+Why go to space - get to meet aliens. walk around in a space suit.  visit other planets.  fight mean aliens.  have laser guns.  explore strange new places.
+
+Why do anything?
