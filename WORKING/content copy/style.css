@@ -1,5 +1,5 @@
-/*
 
+/*
 * {
   border: 1px solid grey;
 }
@@ -145,4 +145,27 @@ https://codepen.io/jonneal/pen/kptBs
 }
 .nav-footer > a {
   padding: 1em;
+}
+
+
+footer {
+  background-color: #222;
+  padding: 0rem;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer a, footer address {
+  color: #ddd;
+  text-decoration: none;
+  font-style: none;
+  font-size: 0.8rem;
+  padding-right: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01rem;
+  font-weight: 300;
 }
