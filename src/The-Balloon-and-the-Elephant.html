@@ -1,11 +1,17 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="tools.js"></script>
+        <script src="jquery-1.4.2.js"></script>
+        <script src="jquery.hotkeys.js"></script>
+		
 	</head>
 	<body>
 <div class="inner">
+
+
 		<h1 class="title">
 			<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
 			The Balloon and the Elephant
@@ -86,16 +92,38 @@
 </li>
 </ul>
 <p>When atoms are hot they go faster</p>
-<p><a href="./Where-to-go-48eab292-781d-4ab7-9f2f-c33db70ee185.html">Where to go?</a></p>
-<p><a href="./Getting-Around-the-Solar-System-e577c34b-d57c-43a5-9b26-0794af15be87.html">Getting Around the Solar System</a></p>
-<p><a href="./Space-1c52ddb9-2689-4af8-b6aa-a4ef216a5d95.html">Space</a></p>
-<p><a href="./Elephants-6fb3cca2-60fe-4797-a993-5b75e70b3291.html">Elephants</a></p>
-<p><a href="./Balloon-Technology-58567049-fcad-4a80-ac26-829f073554b2.html">Balloon Technology</a></p>
-<p><a href="./Orbit-ab2e4837-1c2e-4a29-aac4-05a597a55fe7.html">Orbit</a></p>
-<p><a href="./Gravity-289f3b53-c0df-49cf-8add-68e8b283bb92.html">Gravity</a></p>
-<p><a href="./Explosions-ed51d2bb-6b7b-415c-b29b-601c2f413886.html">Explosions</a></p>
-<p><a href="./On-Dreams-6f6e800c-ebdb-4cff-ab5f-4a19754feb6d.html">On Dreams</a></p>
-<p><a href="./Untitled-94963b7d-ff6c-4016-8127-10d4b5dd49c7.html"></a></p>
-</div>
+
+
+
+<nav class="nav-footer">
+		<a id="prevPage" href="Balloon-Technology.html"><div class="chevron left"></div></a>
+		<a id="nextPage" href="The-Balloon-and-the-Elephant.html"><div class="chevron right"></div></a>
+	</nav>
+
+
+</div><!-- inner -->
+<footer>
+	<a href="Where-to-go.html">Where To Go</a>			
+	<a href="The-Balloon-and-the-Elephant.html">The Elephant and the Balloon</a>
+	<a href="Balloon-Technology.html">Balloon Technology</a>
+	<a href="Elephants.html">Elephants</a>
+	<a href="Explosions.html">Explosions</a>
+	<a href="Getting-Around-the-Solar-System.html">Getting Around the Solar System</a>
+	<a href="Gravity.html">Gravity</a>
+	<a href="On-Dreams.html">On Dreams</a>
+	<a href="Orbit.html">Orbit</a>
+	<a href="Space.html">Space</a>
+</footer>
+
+<script>
+	function nextPage() {
+		document.getElementById('nextPage').click();
+	}
+	function prevPage() {
+		document.getElementById('prevPage').click();
+	}
+	$(document).bind('keyup', 'left', prevPage);
+	$(document).bind('keyup', 'right', nextPage);
+</script>
 </body>
 </html>

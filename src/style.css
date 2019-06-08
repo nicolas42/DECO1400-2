@@ -73,10 +73,6 @@ img {
 
 }
 
-
-/* Pure CSS side menu file:///Users/nick2/Documents/GitHub/DECO1400/purecss/pure_css_demo.html */
-
-
 a {
   color: #3b8bba;
   text-decoration: none;
@@ -144,7 +140,7 @@ https://codepen.io/jonneal/pen/kptBs
   justify-content: space-evenly;
 }
 .nav-footer > a {
-  padding: 1em;
+  padding: 3em;
 }
 
 

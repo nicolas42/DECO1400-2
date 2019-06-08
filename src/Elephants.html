@@ -1,11 +1,16 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="tools.js"></script>
+        <script src="jquery-1.4.2.js"></script>
+        <script src="jquery.hotkeys.js"></script>
+		
 	</head>
 	<body>
 <div class="inner">
+
 		<h1 class="title">
 			<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
 			Elephants
@@ -33,6 +38,36 @@
 <p>Airplanes move by using big fans to move air.  There’s no air in space so they top out at a certain altitude.  You can use a big plane to lift a little rocket up a bit higher but if you want to lift a big rocket you need an even bigger plane and sometimes there just isn’t a large enough plane.  Also the main problem is to go fast enough to get into orbit and planes don’t solve that.  Not to mention that plane engines won’t get you anywhere else in the Solar System.</p>
 </li>
 </ul>
-</div>
+
+<nav class="nav-footer">
+		<a id="prevPage" href="Balloon-Technology.html"><div class="chevron left"></div></a>
+		<a id="nextPage" href="The-Balloon-and-the-Elephant.html"><div class="chevron right"></div></a>
+	</nav>
+
+
+</div><!-- inner -->
+<footer>
+	<a href="Where-to-go.html">Where To Go</a>			
+	<a href="The-Balloon-and-the-Elephant.html">The Elephant and the Balloon</a>
+	<a href="Balloon-Technology.html">Balloon Technology</a>
+	<a href="Elephants.html">Elephants</a>
+	<a href="Explosions.html">Explosions</a>
+	<a href="Getting-Around-the-Solar-System.html">Getting Around the Solar System</a>
+	<a href="Gravity.html">Gravity</a>
+	<a href="On-Dreams.html">On Dreams</a>
+	<a href="Orbit.html">Orbit</a>
+	<a href="Space.html">Space</a>
+</footer>
+
+<script>
+	function nextPage() {
+		document.getElementById('nextPage').click();
+	}
+	function prevPage() {
+		document.getElementById('prevPage').click();
+	}
+	$(document).bind('keyup', 'left', prevPage);
+	$(document).bind('keyup', 'right', nextPage);
+</script>
 </body>
 </html>

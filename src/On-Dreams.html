@@ -2,43 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-
-		<script type="text/javascript" src="tools.js"></script>
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-		<!-- Call Script This Last !!!-->
-		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-		
-
-		<link rel="stylesheet" type="text/css" href="co-op.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="tools.js"></script>
+        <script src="jquery-1.4.2.js"></script>
+		<script src="jquery.hotkeys.js"></script>
+		
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<!-- Call Script This Last -->
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
-		<style>
-				blockquote {
-					background: #f9f9f9;
-					border-left: 10px solid #ccc;
-					margin: 1.5em 10px;
-					padding: 0.5em 10px;
-					quotes: "\201C""\201D""\2018""\2019";
-				  }
-				  blockquote:before {
-					color: #ccc;
-					content: open-quote;
-					font-size: 4em;
-					line-height: 0.1em;
-					margin-right: 0.25em;
-					vertical-align: -0.4em;
-				  }
-				  blockquote p {
-					display: inline;
-				  }
-				</style>
-			
+		
 	</head>
-
 	<body>
 <div class="inner">
+
 		<h1 class="title">
 			<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
 			On Dreams
@@ -129,5 +106,40 @@
 
 <p>Why go to space - get to meet aliens. walk around in a space suit.  visit other planets.  fight mean aliens.  have laser guns.  explore strange new places.</p>
 <p>Why do anything?</p>
-</div></body>
+
+
+
+
+
+<nav class="nav-footer">
+		<a id="prevPage" href="Balloon-Technology.html"><div class="chevron left"></div></a>
+		<a id="nextPage" href="The-Balloon-and-the-Elephant.html"><div class="chevron right"></div></a>
+	</nav>
+
+
+</div><!-- inner -->
+<footer>
+	<a href="Where-to-go.html">Where To Go</a>			
+	<a href="The-Balloon-and-the-Elephant.html">The Elephant and the Balloon</a>
+	<a href="Balloon-Technology.html">Balloon Technology</a>
+	<a href="Elephants.html">Elephants</a>
+	<a href="Explosions.html">Explosions</a>
+	<a href="Getting-Around-the-Solar-System.html">Getting Around the Solar System</a>
+	<a href="Gravity.html">Gravity</a>
+	<a href="On-Dreams.html">On Dreams</a>
+	<a href="Orbit.html">Orbit</a>
+	<a href="Space.html">Space</a>
+</footer>
+
+<script>
+	function nextPage() {
+		document.getElementById('nextPage').click();
+	}
+	function prevPage() {
+		document.getElementById('prevPage').click();
+	}
+	$(document).bind('keyup', 'left', prevPage);
+	$(document).bind('keyup', 'right', nextPage);
+</script>
+</body>
 </html>

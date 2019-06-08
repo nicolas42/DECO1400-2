@@ -1,15 +1,19 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="tools.js"></script>
+        <script src="jquery-1.4.2.js"></script>
+        <script src="jquery.hotkeys.js"></script>
+		
 	</head>
 	<body>
 <div class="inner">
 
 		<h1 class="title">
-				<a href="javascript:showHide('nav.container');">&#9776; &nbsp;</a> 
-				Balloon Technology
+				<a href="javascript:showHide('nav.container');" alt="Open Main Menu">&#9776; &nbsp;</a> 
+				Where To Go
 			</h1>
 			<nav class="container">
 				<div><a href="Where-to-go.html">Where To Go</a></div>			
@@ -23,6 +27,7 @@
 				<div><a href="Orbit.html">Orbit</a></div>
 				<div><a href="Space.html">Space</a></div>
 			</nav>
+
 
 <p>It’s so hard to get to another planet that the only reasonable options to go to first are the closest ones; the Moon, Venus, and Mars.</p>
 <h1>Our Moon</h1>
@@ -46,14 +51,14 @@
 		
 			
 <nav class="nav-footer">
-		<a href="#"><div class="chevron left"></div></a>
-		<a href="#"><div class="chevron right"></div></a>
+		<a id="prevPage" href="Balloon-Technology.html"><div class="chevron left"></div></a>
+		<a id="nextPage" href="The-Balloon-and-the-Elephant.html"><div class="chevron right"></div></a>
 	</nav>
 
 
-</div>
+</div><!-- inner -->
 <footer>
-		<a href="Where-to-go.html">Where To Go</a>			
+	<a href="Where-to-go.html">Where To Go</a>			
 	<a href="The-Balloon-and-the-Elephant.html">The Elephant and the Balloon</a>
 	<a href="Balloon-Technology.html">Balloon Technology</a>
 	<a href="Elephants.html">Elephants</a>
@@ -65,16 +70,15 @@
 	<a href="Space.html">Space</a>
 </footer>
 
-<!--<footer>
-	<address>
-<a href="geo:34.6103,-83.5421">123 Fake Street, Clarkesville, GA 30523</a>
-&nbsp;<a href="tel:+15558675309">+1 (555) 867-5309</a>
-<a href="mailto:service@example.net">service@example.net</a>
-&nbsp;<a href="xmpp:chat@example.net?join" title="Chat room">chat@example.net</a>
-</address>	
-	</footer>					
--->
-	
-
+<script>
+	function nextPage() {
+		document.getElementById('nextPage').click();
+	}
+	function prevPage() {
+		document.getElementById('prevPage').click();
+	}
+	$(document).bind('keyup', 'left', prevPage);
+	$(document).bind('keyup', 'right', nextPage);
+</script>
 </body>
 </html>

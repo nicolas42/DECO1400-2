@@ -1,11 +1,16 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="tools.js"></script>
+        <script src="jquery-1.4.2.js"></script>
+        <script src="jquery.hotkeys.js"></script>
+		
 	</head>
 	<body>
 <div class="inner">
+
 
 
 		<h1 class="title">
@@ -28,6 +33,37 @@
 	<p>Nobody has made a balloon which will fly fast enough to get into orbit.  Balloons also run out of air quickly, they can pop, and also they reduce in size which would make flying in them cramped.  So we had to get something else. Explosions!</p>
 	<p>Yes the only way people have found to get into space is by sitting on-top of explosions.  Not a short explosion like you’re used to but one that lasts for minutes.  There’s many problems with this which occur to people such as, if you sit on an explosion won’t you explode?  And how do I keep an explosion going once it’s exploded?  Well all these and more will be discussed and  not answered to any degree.  Read on… <s>Also the explosion has to point downwards. If it points upwards at any time then you’re in trouble!</s></p>
 	<p>Giant spray can.  It’s pressurized, made of metal, and with a single button it will eject fast moving gases (with a little modification) out of the back like the balloon.  But, as you wearily point out, spray cans don’t fly around the room so how will they ever make it to space!?!</p>
-</div>
+
+			
+<nav class="nav-footer">
+		<a id="prevPage" href="Balloon-Technology.html"><div class="chevron left"></div></a>
+		<a id="nextPage" href="The-Balloon-and-the-Elephant.html"><div class="chevron right"></div></a>
+	</nav>
+
+
+</div><!-- inner -->
+<footer>
+	<a href="Where-to-go.html">Where To Go</a>			
+	<a href="The-Balloon-and-the-Elephant.html">The Elephant and the Balloon</a>
+	<a href="Balloon-Technology.html">Balloon Technology</a>
+	<a href="Elephants.html">Elephants</a>
+	<a href="Explosions.html">Explosions</a>
+	<a href="Getting-Around-the-Solar-System.html">Getting Around the Solar System</a>
+	<a href="Gravity.html">Gravity</a>
+	<a href="On-Dreams.html">On Dreams</a>
+	<a href="Orbit.html">Orbit</a>
+	<a href="Space.html">Space</a>
+</footer>
+
+<script>
+	function nextPage() {
+		document.getElementById('nextPage').click();
+	}
+	function prevPage() {
+		document.getElementById('prevPage').click();
+	}
+	$(document).bind('keyup', 'left', prevPage);
+	$(document).bind('keyup', 'right', nextPage);
+</script>
 </body>
 </html>
