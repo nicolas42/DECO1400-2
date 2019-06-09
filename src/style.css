@@ -11,6 +11,11 @@
 body {
   line-height: 1.6;
   margin: 0 auto; 
+/*
+  ruins centering of images :(
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+*/
 }
 
 /* https://www.youtube.com/watch?v=KYT_Ch3dTB8 */
@@ -31,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
   margin: 2rem 0 1rem 0;
 }
 
-p {
+p, li {
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 0.01rem;
   font-weight: 300;
@@ -41,13 +46,19 @@ p {
 */
 }
 
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-
+.small-image {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 /* Flex Menu */
 .container {
@@ -164,4 +175,20 @@ footer a, footer address {
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 0.01rem;
   font-weight: 300;
+}
+
+pre {
+  padding-left: 2rem;
+}
+
+em {
+  font-style: italic;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01rem;
+  color: #333;
+
+}
+
+blockquote {
+  padding: 0.1rem;
 }

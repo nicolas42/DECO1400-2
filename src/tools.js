@@ -28,3 +28,11 @@ function toggleMargins() {
 	style.maxWidth = 'none';
   }
 }
+
+function playPauseOrbitVideo(arg) {
+	playPause('#myVideo');	
+}
+
+function showHideMenu(){
+	showHide('nav.container');
+}

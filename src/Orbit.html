@@ -6,8 +6,7 @@
 		<script type="text/javascript" src="tools.js"></script>
         <script src="jquery-1.4.2.js"></script>
         <script src="jquery.hotkeys.js"></script>
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
+		<!--		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
 		<!-- Call Script This Last !!!-->
 		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 		
@@ -32,38 +31,43 @@
 		</nav>
 </div>
 
-			<!--Video-->
-<video autoplay muted loop id="myVideo" class="video" onclick="playPause('#myVideo');">
+	<!--Video-->
+	<video autoplay muted loop id="myVideo" class="video" onclick="playPause('#myVideo');">
 		<source src="ISS_trimmed.mp4" type="video/mp4">
 		Your browser does not support HTML5 video.
-		</video>
+	</video>
 
-		<div class="inner">
-				<div><a href="javascript:toggleMargins()">Full Screen</a></div>
+		<!-- Buttons -->
+	<div class="inner">
+			<button class="button" onclick="toggleMargins();">Toggle <u>F</u>ull Screen</button>	  
+			<button class="button" onclick="playPause('#myVideo')"><u>P</u>lay/Pause</button>	  
+	<!--				<div><a href="javascript:toggleMargins()">Toggle Margins</a></div>-->
 
-<p><a href="https://www.nasa.gov/feature/download-nasa-videos-for-cinespace">https://www.nasa.gov/feature/download-nasa-videos-for-cinespace</a></p>
-<p><a href="https://www.youtube.com/watch?v=4993sBLAzGA">NASA Live: Earth From Space - Nasa Live Stream | ISS LIVE FEED : ISS Tracker + Live Chat</a></p>
-<p>Looking at the Earth from space is pretty cool</p>
-<p>Space is far above your head and it keeps going forever.  Unfortunately so does the gravity of the Earth.  Although astronauts look like they are floating above the Earth they are actually falling towards it just like you or I would.</p>
-<p>So why don’t they hit?  The trick is that they are going sideways very fast.  Orbit is actually about going so fast that as you fall towards Earth you miss it and go around instead.  And you keep on doing that because there’s no air to slow you down.  Cool huh?</p>
-<p>To be in orbit and not fall down again you need to go about 270 times faster than a car on the highway.</p>
-<p>The moon, which is much further than the astronauts in the space station, only hangs around because the Earth keeps pulling on it.</p>
-<p>It seems like you’re still when you’re in space but you’re actually going faster than a bullet. &lt;gif of people or space station in orbit&gt;</p>
-<p>All of these things are very hard to imagine.</p>
-<ul>
-<li>
-<p>Planes in Space</p>
-<p>Planes move around by using fans to blow air backwards.  The higher you go the less air there is which means it’s impossible for planes to go into space.</p>
-<p>further than that you need to bring your own liquid explosives to push you.  The Earth keeps pulling things towards it even out as far as the moon (which is why the moon stays near the Earth).  If you go directly upwards to try to get into space you’ll probably just fall back to Earth again unless you can get very far.  What most people do “park” in orbit.</p>
-<p>and some people have even floated up very high with balloons (that they don’t use for propulsion but rather for buoyancy - like a boat)</p>
-</li>
-</ul>
+	<p>Space is far above your head and it keeps going forever.  Unfortunately so does the gravity of the Earth which poses a problem to those hoping to get off it.  The gravity near the international space station is actually about the same strength as it is on Earth which surprises a lot of people.  Although astronauts look like they are floating above the Earth they are actually falling towards it just like you or I would.</p>
+
+<p>So why don't they hit?  The trick is that they are going sideways very fast.  This is called orbit and it's when you go so fast that as you fall towards Earth you miss it and go around instead.  And you keep on doing that because there's no air to slow you down.  Cool huh?</p>
+
+<p>
+	When go side ways fast enough your sideways velocity kind of balances out how you fall towards the Earth.  
+	You can find out how fast you need to go in order to effectively float if you solve this equation 
+	when 
+	\(a = 10m/s \) and 
+	\(r = 6371000m\) 
+	$$ a = \frac{v^2}{r} $$
+  </p>
+
+  <p>For the curious, 10m/s is how fast things speed up when you drop them out of your window and 6371 km is the distance from where you are to the center of the Earth.</p>
+<p>To be in orbit and not fall down again you need to go about 270 times faster than a car on the highway.  The moon, for instance, orbits around the Earth same way that the space station does.</p>
+
+<p>You could actually orbit at 1 meter off the ground if there wasn't any hills or atmosphere.  If you've ever put your hand out of the window of car on the highway you'll know that the air can exert quite a strong force if you're going fast.  This effect gets much worse the faster you go.</p>
+
+<p>But this is not such a problem when you've gone up high enough and the air gets very thin. Then all you need to do is go fast enough sideways. To do that there are two main strategies which I’ll call the balloon and elephant techniques.</p>
 
 
 
 <nav class="nav-footer">
-		<a id="prevPage" href="Balloon-Technology.html"><div class="chevron left"></div></a>
-		<a id="nextPage" href="The-Balloon-and-the-Elephant.html"><div class="chevron right"></div></a>
+		<a id="prevPage" href="The-Balloon-and-the-Elephant.html"><div class="chevron left"></div></a>
+		<a id="nextPage" href="Balloon-Technology.html"><div class="chevron right"></div></a>
 	</nav>
 
 
@@ -90,6 +94,14 @@
 	}
 	$(document).bind('keyup', 'left', prevPage);
 	$(document).bind('keyup', 'right', nextPage);
+	$(document).bind('keyup', 'f', toggleMargins);
+	$(document).bind('keyup', 'p', playPauseOrbitVideo);
+	$(document).bind('keyup', 'k', playPauseOrbitVideo);
+	$(document).bind('keyup', 'm', showHideMenu);
+
+	$(document).bind('keyup', 'shift+p', prevPage);
+	$(document).bind('keyup', 'shift+n', nextPage);
+
 </script>
 </body>
 </html>
